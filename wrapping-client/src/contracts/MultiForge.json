@@ -1,0 +1,496 @@
+{
+  "contractName": "MultiForge",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_forge",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "forge",
+      "outputs": [
+        {
+          "internalType": "contract IForge",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.12+commit.7709ece9\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_forge\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"constant\":true,\"inputs\":[],\"name\":\"forge\",\"outputs\":[{\"internalType\":\"contract IForge\",\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/home/nate/workspace/gu-tools/contracts/MultiForge.sol\":\"MultiForge\"},\"evmVersion\":\"petersburg\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/nate/workspace/gu-tools/contracts/MultiForge.sol\":{\"keccak256\":\"0x9c6d86aa61aa0ba8f7aa1a60dc04623f166301583f1ddcce07df0f8cf64ae91f\",\"urls\":[\"bzz-raw://5f08702acc657ca6d2b5abb2d8658db84c5c8ccc4000669ba273a5296d55c100\",\"dweb:/ipfs/Qmd6b8LzNXyFRnN6MfWr5z2tTZMbFcLNhJVsNM3KzwFSGG\"]},\"/home/nate/workspace/gu-tools/contracts/interfaces/ICards.sol\":{\"keccak256\":\"0x6bf574d09e46b425595d11d2ae279e918bcb4658cf68faa0ebe3abc196b181f5\",\"urls\":[\"bzz-raw://e6995fcb9f81bf5007f4770acfd640f25a8a9523362306e644ec2f7660710d8d\",\"dweb:/ipfs/QmUQDiQn3PHCE1he5LYt3qsGotKvQJZrtGTJdxt5p9sn8a\"]},\"/home/nate/workspace/gu-tools/contracts/interfaces/IForge.sol\":{\"keccak256\":\"0x1cf210aa1a811bae7565a9397318a93e8cc8bbe529881284f43c2b01e9ff25e9\",\"urls\":[\"bzz-raw://5bfdf6fec9770d27db376d3d7f020636462b7706a9182c7982f9f74315295a30\",\"dweb:/ipfs/QmeLGrBKe6N8bVserahPw8RNj53nqgBY74H6amvNeKuSnJ\"]},\"@openzeppelin/contracts/GSN/Context.sol\":{\"keccak256\":\"0x90a3995645af7562d84b9d69363ffa5ae7217714ab61e951bf7bc450f40e4061\",\"urls\":[\"bzz-raw://216ef9d6b614db4eb46970b4e84903f2534a45572dd30a79f0041f1a5830f436\",\"dweb:/ipfs/QmNPrJ4MWKUAWzKXpUqeyKRUfosaoANZAqXgvepdrCwZAG\"]},\"@openzeppelin/contracts/introspection/IERC165.sol\":{\"keccak256\":\"0xe0ed10f53955c35eecb02724538650a155aa940be3f0a54cd3bde6c6b0c6e48c\",\"urls\":[\"bzz-raw://7dcfda88e3225987245908c3296f3559752647036804325ebfaa9fd1545161c3\",\"dweb:/ipfs/QmXxx5rHfLL57zdgyyyG9MMv4XGN7bpVSc2MuDcaCgto6u\"]},\"@openzeppelin/contracts/ownership/Ownable.sol\":{\"keccak256\":\"0xecd8ab29d9a5771c3964d0cd1788c4a5098a0081b20fb275da850a22b1c59806\",\"urls\":[\"bzz-raw://696a75bc2c55407ce8251ccc7d19ecb1b7b2be1796a160a6524312babcc7e3d4\",\"dweb:/ipfs/QmQViKEp3y99h9uhRssE29TmjBKRnFMaoz3eJZ4eggggg2\"]},\"@openzeppelin/contracts/token/ERC721/IERC721.sol\":{\"keccak256\":\"0x680c11bc8173eef7d5db843baaf64ce499476de2c172f6aea631dbee54bcd2e6\",\"urls\":[\"bzz-raw://0f314963ab26fb65c6f364d57900f0f1aa8f6aeb4396e327e5e5c646815f060e\",\"dweb:/ipfs/Qmf6eSUtRUF4YDxGyhQq7TVDYzuHcYEvk9Us3RVy5iZQVH\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b506040516101623803806101628339818101604052602081101561003357600080fd5b8101908080519060200190929190505050806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055505060cf806100936000396000f3fe6080604052348015600f57600080fd5b506004361060285760003560e01c80636c6f423914602d575b600080fd5b60336075565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff168156fea265627a7a723158202209e3bfd233fe4120fa274254bc943d571a01c47bb51a272f79e952e1cf642464736f6c634300050c0032",
+  "deployedBytecode": "0x6080604052348015600f57600080fd5b506004361060285760003560e01c80636c6f423914602d575b600080fd5b60336075565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff168156fea265627a7a723158202209e3bfd233fe4120fa274254bc943d571a01c47bb51a272f79e952e1cf642464736f6c634300050c0032",
+  "sourceMap": "60:127:3:-;;;111:74;8:9:-1;5:2;;;30:1;27;20:12;5:2;111:74:3;;;;;;;;;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;111:74:3;;;;;;;;;;;;;;;;171:6;156:5;;:22;;;;;;;;;;;;;;;;;;111:74;60:127;;;;;;",
+  "deployedSourceMap": "60:127:3:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;60:127:3;;;;;;;;;;;;;;;;;;;86:19;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o",
+  "source": "pragma solidity 0.5.12;\n\nimport \"./interfaces/IForge.sol\";\n\ncontract MultiForge {\n    IForge public forge;\n    constructor(address _forge) public {\n        forge = IForge(_forge);\n    }\n}\n",
+  "sourcePath": "/home/nate/workspace/gu-tools/contracts/MultiForge.sol",
+  "ast": {
+    "absolutePath": "/home/nate/workspace/gu-tools/contracts/MultiForge.sol",
+    "exportedSymbols": {
+      "MultiForge": [
+        316
+      ]
+    },
+    "id": 317,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 300,
+        "literals": [
+          "solidity",
+          "0.5",
+          ".12"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:3"
+      },
+      {
+        "absolutePath": "/home/nate/workspace/gu-tools/contracts/interfaces/IForge.sol",
+        "file": "./interfaces/IForge.sol",
+        "id": 301,
+        "nodeType": "ImportDirective",
+        "scope": 317,
+        "sourceUnit": 420,
+        "src": "25:33:3",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 316,
+        "linearizedBaseContracts": [
+          316
+        ],
+        "name": "MultiForge",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 303,
+            "name": "forge",
+            "nodeType": "VariableDeclaration",
+            "scope": 316,
+            "src": "86:19:3",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_contract$_IForge_$419",
+              "typeString": "contract IForge"
+            },
+            "typeName": {
+              "contractScope": null,
+              "id": 302,
+              "name": "IForge",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 419,
+              "src": "86:6:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_IForge_$419",
+                "typeString": "contract IForge"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 314,
+              "nodeType": "Block",
+              "src": "146:39:3",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 312,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 308,
+                      "name": "forge",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 303,
+                      "src": "156:5:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_IForge_$419",
+                        "typeString": "contract IForge"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "arguments": [
+                        {
+                          "argumentTypes": null,
+                          "id": 310,
+                          "name": "_forge",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 305,
+                          "src": "171:6:3",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        ],
+                        "id": 309,
+                        "name": "IForge",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 419,
+                        "src": "164:6:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_contract$_IForge_$419_$",
+                          "typeString": "type(contract IForge)"
+                        }
+                      },
+                      "id": 311,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "typeConversion",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "164:14:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_IForge_$419",
+                        "typeString": "contract IForge"
+                      }
+                    },
+                    "src": "156:22:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IForge_$419",
+                      "typeString": "contract IForge"
+                    }
+                  },
+                  "id": 313,
+                  "nodeType": "ExpressionStatement",
+                  "src": "156:22:3"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 315,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 306,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 305,
+                  "name": "_forge",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 315,
+                  "src": "123:14:3",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 304,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "123:7:3",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "122:16:3"
+            },
+            "returnParameters": {
+              "id": 307,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "146:0:3"
+            },
+            "scope": 316,
+            "src": "111:74:3",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 317,
+        "src": "60:127:3"
+      }
+    ],
+    "src": "0:188:3"
+  },
+  "legacyAST": {
+    "absolutePath": "/home/nate/workspace/gu-tools/contracts/MultiForge.sol",
+    "exportedSymbols": {
+      "MultiForge": [
+        316
+      ]
+    },
+    "id": 317,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 300,
+        "literals": [
+          "solidity",
+          "0.5",
+          ".12"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:3"
+      },
+      {
+        "absolutePath": "/home/nate/workspace/gu-tools/contracts/interfaces/IForge.sol",
+        "file": "./interfaces/IForge.sol",
+        "id": 301,
+        "nodeType": "ImportDirective",
+        "scope": 317,
+        "sourceUnit": 420,
+        "src": "25:33:3",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 316,
+        "linearizedBaseContracts": [
+          316
+        ],
+        "name": "MultiForge",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 303,
+            "name": "forge",
+            "nodeType": "VariableDeclaration",
+            "scope": 316,
+            "src": "86:19:3",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_contract$_IForge_$419",
+              "typeString": "contract IForge"
+            },
+            "typeName": {
+              "contractScope": null,
+              "id": 302,
+              "name": "IForge",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 419,
+              "src": "86:6:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_IForge_$419",
+                "typeString": "contract IForge"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 314,
+              "nodeType": "Block",
+              "src": "146:39:3",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 312,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 308,
+                      "name": "forge",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 303,
+                      "src": "156:5:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_IForge_$419",
+                        "typeString": "contract IForge"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "arguments": [
+                        {
+                          "argumentTypes": null,
+                          "id": 310,
+                          "name": "_forge",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 305,
+                          "src": "171:6:3",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        ],
+                        "id": 309,
+                        "name": "IForge",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 419,
+                        "src": "164:6:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_contract$_IForge_$419_$",
+                          "typeString": "type(contract IForge)"
+                        }
+                      },
+                      "id": 311,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "typeConversion",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "164:14:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_IForge_$419",
+                        "typeString": "contract IForge"
+                      }
+                    },
+                    "src": "156:22:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IForge_$419",
+                      "typeString": "contract IForge"
+                    }
+                  },
+                  "id": 313,
+                  "nodeType": "ExpressionStatement",
+                  "src": "156:22:3"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 315,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 306,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 305,
+                  "name": "_forge",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 315,
+                  "src": "123:14:3",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 304,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "123:7:3",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "122:16:3"
+            },
+            "returnParameters": {
+              "id": 307,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "146:0:3"
+            },
+            "scope": 316,
+            "src": "111:74:3",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 317,
+        "src": "60:127:3"
+      }
+    ],
+    "src": "0:188:3"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.12+commit.7709ece9.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.0.19",
+  "updatedAt": "2019-11-27T16:45:04.559Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
